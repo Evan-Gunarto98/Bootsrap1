@@ -1,4 +1,5 @@
 
+
 #profile1{
        z-index: 2;
        display: block;
@@ -16,10 +17,11 @@
     
     /* background: linear-gradient(-45deg,#1DB9C3,#F56FAD,#C32BAD,#7027A0); */
     /* background: linear-gradient(-45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%,rgba(63,94,251,1) 100%); */
-    background: radial-gradient(circle ,#3E00FF,#3D087B,#170055,#950101);
+     background: radial-gradient(circle ,#3E00FF,#3D087B,#170055,#950101);
     /* background: linear-gradient(45deg ,#3E00FF,#3D087B,#170055); */
-    background-size: 500% 500%;
-    animation: gradient 30s ease infinite;
+     background-size: 500% 500%; 
+    animation: gradient 30s ease infinite;  
+    
 }
 
 @keyframes gradient {
@@ -63,6 +65,8 @@
         background-position: 100% 100%;
     } */
 }
+
+/* paralax effect */
 
 #filler{
     /* The image used */
