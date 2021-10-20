@@ -32,5 +32,36 @@ $(window).scroll(function () {
   }
 });
 
-//star animation
+//sliding up animation
 
+$(document).ready(function(){
+
+ 
+
+  $('#slid').mouseenter(function(){
+    $('#slidd').animate({
+      height: 'toggle'
+    });
+  });
+  // $('#slid').mouseleave(function(){
+  //   $('#slidd').animate({
+  //     height: 'toggle'
+  //   });
+  // });
+});
+
+//animation untuk nggeser object
+//object position harus relative
+
+$(window).on("load",function(){
+  $("#navname").animate({ 
+    left: "+=200px",
+  }, 1000);
+});
+
+//shake animation
+$(document).ready(function(){
+  $( "#navname" ).click(function() {
+    $( "#navname" ).effect( "shake" ,{direction: "left", times: 2, distance: 1}, 1000 );
+  });
+});
