@@ -1,3 +1,9 @@
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+                
+*{
+    font-family: 'Montserrat', sans-serif;
+                                                                                         
+}
 
 
 #profile1{
@@ -12,14 +18,40 @@
   
 }
 
+#profilename{
+    margin-left: -500px;
+    position: relative;
+}
+
+#sysd{
+   
+    position: relative;
+    z-index: 2;
+    transform: rotate(90deg);
+    display: flex;
+    right: 0; border: 0;
+}
+
+#sidenav{
+    position: relative;
+    z-index: 2;
+    color: white;
+    
+}
+
+
+#sidenav:hover{
+    color: gray;
+}
+
 #home {
    
     
     /* background: linear-gradient(-45deg,#1DB9C3,#F56FAD,#C32BAD,#7027A0); */
     /* background: linear-gradient(-45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%,rgba(63,94,251,1) 100%); */
-     background: radial-gradient(circle ,#3E00FF,#3D087B,#170055,#950101);
+     background: radial-gradient(circle ,#7868E6,#3D087B,#170055,#000000);
     /* background: linear-gradient(45deg ,#3E00FF,#3D087B,#170055); */
-     background-size: 500% 500%; 
+     background-size: 400% 400%; 
     animation: gradient 30s ease infinite;  
     
 }
@@ -101,3 +133,18 @@
 #navname{
     margin-left: -200px;
 }
+
+#navmenu{
+    margin-right: -200px;
+}
+
+
+
+#sliid{
+    display: none;
+}
+
+#progressba{
+background: linear-gradient(90deg,#7868E6,#3D087B,#170055);
+}
+
