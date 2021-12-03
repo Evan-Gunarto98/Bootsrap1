@@ -31,17 +31,27 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg">
         <div class="container-fluid">
             <a href="#" class="navbar-brand position-relative" id="navname" >Evan Christian Gunarto</a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
+            <div type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </div>
             
-            <div class="collapse navbar-collapse " id="navbarCollapse1">
-                <div class="navbar-nav d-flex ms-auto position-relative " id="navmenu">
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="./portofolio.html" class="nav-item nav-link btn" >Portofolio</a>
+            <div class="collapse navbar-collapse " id="navbarCollapse1" >
+                <div class="navbar-nav d-flex ms-auto position-relative " id="navmenu" >
+                  <li class="nav-item">
+                    <a href="#" class="nav-item nav-link ">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <div href="#" class="nav-item nav-link btn" onclick="moveToPortofolio()">Portofolio</div>
+                  </li>
+                  <li class="nav-item">
                     <div href="#" class="nav-item nav-link btn" onclick="moveToAbout()">About</div>
+                  </li>
+                  <li class="nav-item">
                     <div href="#" class="nav-item nav-link btn" onclick="moveToSkill()">Skills</div>
+                  </li>
+                  <li class="nav-item">
                     <div href="#" class="nav-item nav-link btn " onclick="moveToContact()">Contact</div>
+                  </li>
                 </div>
                
             </div>
@@ -140,7 +150,7 @@
 
       <!-- contact -->
 
-      <div id="about" class=" d-flex justify-content-center " style="min-height:100vh; background-color: #DEECFF;" >
+      <div id="contact" class=" d-flex justify-content-center " style="min-height:100vh; background-color: #DEECFF;" >
         <div id="fade" class="d-flex  justify-content-center align-items-center m-5" >
 
           <div data-aos="fade-up" id="about-content" class=" m-5 justify-content-center text-center">

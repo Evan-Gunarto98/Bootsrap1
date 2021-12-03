@@ -17,6 +17,11 @@ function moveToSkill() {
   
 }
 
+function moveToPortofolio() {
+  window.location.href = "./portofolio.html";
+  
+}
+
 
 
 //fade in n out animation
@@ -24,6 +29,12 @@ function moveToSkill() {
 $(window).on("load",function() { 
   
   $("#profile").fadeIn(2000);
+
+  $("#navbar").mouseover(function() {
+    $(this).css({'background-color':'#261C2C','transition':'background-color 1s ease'});
+  }).mouseout(function() {
+    $(this).css('background-color','transparent');
+    });
       
 });
 
@@ -32,10 +43,15 @@ $(window).on("load",function() {
 
 $(window).scroll(function () {
   if ($(window).scrollTop() >= 50) {
-  $('#navbar').css({'background-color':'#261C2C'},1000);
+   $('#navbar').css({'background-color':'#261C2C'},1000);
+
+
 
   } else {
-  $('#navbar').css({"background-color":"transparent", "transition":"background-color 1s ease" });
+   
+   $('#navbar').css({"background-color":"transparent", "transition":"background-color 1s ease" });
+      
+  
   }
 });
 
