@@ -43,7 +43,7 @@ $(window).on("load",function() {
 
 $(window).scroll(function () {
   if ($(window).scrollTop() >= 50) {
-   $('#navbar').css({'background-color':'#000000','opacity':'0.8'},1000);
+   $('#navbar').css({'background-color':'#261C2C'},1000);
 
 
 
@@ -76,18 +76,18 @@ $(window).scroll(function () {
 //animation untuk nggeser object
 //object position harus relative
 
-// $(window).on("load",function(){
-//   $("#navname").animate({ 
-//     left: "+=200px",
-//   }, 1000);
-//   $("#navmenu").animate({ 
-//     right: "+=200px",
-//   }, 1000);
-//   $("#profilename").animate({ 
-//     left: "+=500px",
-//   }, 1000);
+$(window).on("load",function(){
+  $("#navname").animate({ 
+    left: "+=200px",
+  }, 1000);
+  $("#navmenu").animate({ 
+    right: "+=200px",
+  }, 1000);
+  $("#profilename").animate({ 
+    left: "+=500px",
+  }, 1000);
 
-// });
+});
 
 
 
@@ -105,7 +105,6 @@ $(window).on("load",function(){
   }
 
 });
-
 //shake animation
 // $(document).ready(function(){
 //   $( "#navname" ).click(function() {
