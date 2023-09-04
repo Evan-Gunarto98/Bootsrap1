@@ -29,30 +29,48 @@ function moveToPortofolio() {
 $(window).on("load",function() { 
   
   $("#profile").fadeIn(2000);
-
-  $("#navbar").mouseover(function() {
-    $(this).css({'background-color':'#261C2C','transition':'background-color 1s ease'});
-  }).mouseout(function() {
-    $(this).css('background-color','transparent');
-    });
-      
+  // if ($('.navbar-toggler').is(':visible')) {
+      $("#navmenu").mouseover(function() {
+        $(this).css({'background-color':'#261C2C','transition':'background-color 1s ease'});
+    }).mouseout(function() {
+      $(this).css('background-color','transparent');
+      });
+  // }else{
+  //   $("#navbar").mouseover(function() {
+  //     $(this).css({'background-color':'#261C2C','transition':'background-color 1s ease'});
+  // }).mouseout(function() {
+  //   $(this).css('background-color','transparent');
+  //   });
+  // }    
 });
 
 //color changing navbar
 
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() >= 50) {
-   $('#navbar').css({'background-color':'#261C2C'},1000);
-
-
-
-  } else {
-   
-   $('#navbar').css({"background-color":"transparent", "transition":"background-color 1s ease" });
-      
+$(window).scroll(function () { 
   
-  }
+    if ($('.navbar-toggler').is(':visible')) {
+    //  $('#navbar').css({'background-color':'#261C2C'},1000);
+    $('#navmenu').css('background-color', '#261C2C');
+
+
+    } else {
+    
+    //  $('#navbar').css({"background-color":"transparent", "transition":"background-color 1s ease" });
+    $('#navmenu').css('background-color', 'transparent');
+    }
+  
+    if ($(window).scrollTop() >= 50) {
+       $('#navmenu').css({'background-color':'#261C2C'},1000);
+      // $('#navmenu').css('background-color', '#261C2C');
+  
+  
+      } else {
+      
+       $('#navmenu').css({"background-color":"transparent", "transition":"background-color 1s ease" });
+      // $('#navmenu').css('background-color', 'transparent');
+      }
+  
 });
 
 //sliding up animation
@@ -77,12 +95,6 @@ $(window).scroll(function () {
 //object position harus relative
 
 $(window).on("load",function(){
-  $("#navname").animate({ 
-    left: "+=200px",
-  }, 1000);
-  $("#navmenu").animate({ 
-    right: "+=200px",
-  }, 1000);
   $("#profilename").animate({ 
     left: "+=500px",
   }, 1000);

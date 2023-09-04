@@ -21,6 +21,7 @@
 #profilename{
     margin-left: -500px;
     position: relative;
+    min-height: 90vh;
 }
 
 #sysd{
@@ -39,6 +40,11 @@
     
 }
 
+#navmenu{
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 #sidenav:hover{
     color: gray;
@@ -55,6 +61,33 @@
     animation: gradient 30s ease infinite;  
     
 }
+
+/* about */
+
+
+#about{
+    width: 80vw;
+}
+
+@media (max-width: 768px) {
+    #about {
+        width: 100vw;
+    }
+}
+
+/* skills */
+#skills{
+    width: 80vw;
+   
+}
+
+@media (max-width: 768px) {
+    #skills {
+        width: 100vw;
+    }
+}
+
+
 
 @keyframes gradient {
     0% {
@@ -130,13 +163,6 @@
    
 }
 
-#navname{
-    margin-left: -200px;
-}
-
-#navmenu{
-    margin-right: -200px;
-}
 
 
 
@@ -148,3 +174,23 @@
 background: linear-gradient(90deg,#7868E6,#3D087B,#170055);
 }
 
+
+/* circular profile */
+
+.circular-image { 
+    display: inline-block; 
+    position: relative;
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+     border: #7868E6 10px solid;
+   
+   
+} 
+    
+.circular-image img { 
+    width: auto; height: 100%; 
+   
+    /* margin-left: -40px;  */
+}
