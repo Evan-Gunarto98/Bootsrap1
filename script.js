@@ -24,19 +24,23 @@ function moveToPortofolio() {
 
 
 
+
 //fade in n out animation
 
 $(window).on("load",function() { 
-  
+  window.scrollTo(0, 0);
   $("#profile").fadeIn(2000);
   // if ($('.navbar-toggler').is(':visible')) {
-      $("#navmenu").mouseover(function() {
+    $("#navmenu").mouseover(function() {
         $(this).css({'background-color':'rgba(0, 0, 0, 0.2)'
                     ,'transition':'background-color 1s ease',
                     'backdrop-filter': 'blur(10px)'});
     }).mouseout(function() {
       $(this).css('background-color','transparent');
-      });
+    });
+
+
+
 
 });
 

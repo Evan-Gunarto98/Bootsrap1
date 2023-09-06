@@ -17,6 +17,16 @@ h1 {
     font-weight: 700; /* You can specify the desired weight here */
 }
 
+.card{
+    border-radius: 10px;
+}
+
+.card-body{
+    background: #DEECFF;
+    border: transparent;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;;
+}
+
 #profile1{
     
        z-index: 2;
@@ -61,6 +71,12 @@ h1 {
     color: gray;
 }
 
+
+
+.nav-link {
+    cursor: pointer;
+  }
+
 #home {
    
     
@@ -100,9 +116,11 @@ h1 {
     }
 }
 
-#contact{
+#contact div{
     /* width: 80vw; */
-   
+   color: gainsboro;
+   background: transparent;
+   border: transparent;
 }
 
 @media (max-width: 768px) {
@@ -196,7 +214,7 @@ h1 {
 }
 
 #progressba{
-background: linear-gradient(90deg,#7868E6,#3D087B,#170055);
+background: linear-gradient(90deg,#344CB7,#577BC1);
 }
 
 
