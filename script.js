@@ -39,6 +39,11 @@ $(window).on("load",function() {
       $(this).css('background-color','transparent');
     });
 
+    $(".card-body").mouseover(function() {
+      $(this).css({'transform':'scale(1.05)'})
+    }).mouseout(function(){
+      $(this).css({'transform':'scale(1.00)'})
+    });
 
 
 
