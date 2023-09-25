@@ -4,7 +4,14 @@
 
 *{
     font-family: 'Inconsolata', monospace;
-                                                                                                               
+                                                                                                         
+}
+
+
+
+p{
+    color:rgba(0, 0, 0, 0.70);
+    /* color: #344CB7; */
 }
 
 .frosted-glass {
@@ -17,11 +24,22 @@ h1 {
     font-weight: 700; /* You can specify the desired weight here */
 }
 
+
+h2,h4 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700; /* You can specify the desired weight here */
+    color:rgba(0, 0, 0, 0.80);
+    /* color: #000957; */
+
+}
+
 .card{
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .card-body{
+    overflow: hidden;
     background: #DEECFF;
     border: transparent;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
@@ -29,7 +47,7 @@ h1 {
 
 #profile1{
     
-       z-index: 2;
+       z-index: 6;
        display: block;
       transition: 330ms ease-in-out;  
       position: relative;
@@ -41,8 +59,11 @@ h1 {
 }
 
 #profilename{
-    padding-top: 100px;
-    padding-bottom: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    max-height: 720px;
 }
 
 #sysd{
@@ -207,6 +228,72 @@ h1 {
    
 }
 
+ /* Style the draggable element */
+ #draggable-element {
+    width: 100px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.project-image{
+    max-width: 900px;
+    max-height: 1600px;
+    border-radius: 10px;
+}
+
+.custom-link{
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    color: 577BC1;
+    background: #DEECFF;
+    width: fit-content;
+    border: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+
+.custom-link.show{
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+    color: 577BC1;
+    background: #DEECFF;
+    width: fit-content;
+    border: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
+    opacity: 1;
+    height: 25px;
+    transition: all 0.5s ease-in;
+}
+
+.custom-link:hover{
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
+}
+
+
+
+/* .container {
+    display: flex;
+} */
+
+/* .card {
+    margin: 10px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    overflow: hidden;
+} */
+
 
 
 
@@ -215,11 +302,15 @@ h1 {
 }
 
 #progressba{
-background: linear-gradient(90deg,#344CB7,#577BC1);
+    background: linear-gradient(90deg,#344CB7,#577BC1);
 }
 
 
 /* circular profile */
+
+#profile1{
+    z-index: 10;
+}
 
 .circular-image { 
     display: inline-block; 

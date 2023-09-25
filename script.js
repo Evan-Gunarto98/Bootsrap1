@@ -1,5 +1,10 @@
-// navbar control 
 
+
+// navbar control 
+function moveToProfile() {
+  document.getElementById("profilename").scrollIntoView({behavior:"smooth"});
+  
+}
 
 
 function moveToAbout() {
@@ -17,6 +22,11 @@ function moveToSkill() {
   
 }
 
+function moveToProject() {
+  document.getElementById("project").scrollIntoView({behavior:"smooth"});
+  
+}
+
 function moveToPortofolio() {
   window.location.href = "./portofolio.html";
   
@@ -29,25 +39,33 @@ function moveToPortofolio() {
 
 $(window).on("load",function() { 
   window.scrollTo(0, 0);
+
+
   $("#profile").fadeIn(2000);
   // if ($('.navbar-toggler').is(':visible')) {
     $("#navmenu").mouseover(function() {
         $(this).css({'background-color':'rgba(0, 0, 0, 0.2)'
                     ,'transition':'background-color 1s ease',
                     'backdrop-filter': 'blur(10px)'});
+
     }).mouseout(function() {
       $(this).css('background-color','transparent');
+      
     });
 
     $(".card-body").mouseover(function() {
-      $(this).css({'transform':'scale(1.05)'})
+      $(this).css({'transform':'scale(1.05)'});
+       $(this).find(".custom-link").addClass("show");
     }).mouseout(function(){
       $(this).css({'transform':'scale(1.00)'})
+      $(this).find(".custom-link").removeClass("show");
     });
 
+    
 
 
 });
+
 
 //color changing navbar
 
@@ -128,29 +146,16 @@ $(window).scroll(function () {
 //animation untuk nggeser object
 //object position harus relative
 
-$(window).on("load",function(){
-  $("#profilename").animate({ 
-    left: "+=500px",
-  }, 1000);
+// $(window).on("load",function(){
+//   $("#profilename").animate({ 
+//     left: "+=500px",
+//   }, 1000);
 
-});
-
-
+// });
 
 
-$(window).on("load",function(){
-  
-  var i = 0;
-  var txt = getElementById("#hometitle");
-  var speed = 50;
 
-  if (i < txt.length) {
-    document.getElementById("#hometitle").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
 
-});
 //shake animation
 // $(document).ready(function(){
 //   $( "#navname" ).click(function() {
@@ -158,16 +163,26 @@ $(window).on("load",function(){
 //   });
 // });
 
-const buttons = document.getElementsByTagName("button");
+// const buttons = document.getElementsByTagName("button");
 
-for (const button of buttons) {
-  button.addEventListener('click', () => {
-     var id = button.getAttribute("id");
+// for (const button of buttons) {
+//   button.addEventListener('click', () => {
+//      var id = button.getAttribute("id");
     
-     var layerClass = "." + id+ "-layer";
-     var layers = document.querySelectorAll(layerClass);
-     for (const layer of layers) {
-       layer.classList.toggle("active");
-     }
-  });
-}
+//      var layerClass = "." + id+ "-layer";
+//      var layers = document.querySelectorAll(layerClass);
+//      for (const layer of layers) {
+//        layer.classList.toggle("active");
+//      }
+//   });
+// }
+
+// $(document).ready(function () {
+//   const square = $('.custom-link');
+//   const animateButton = $('#animateButton');
+
+//   animateButton.click(function () {
+//       square.toggleClass('animate');
+//   });
+// });
+
